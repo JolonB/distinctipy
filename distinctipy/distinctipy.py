@@ -289,7 +289,7 @@ def get_colors(
     if exclude_colors is None:
         exclude_colors = [WHITE, BLACK]
 
-    colors = exclude_colors.copy()
+    colors = list(exclude_colors)
 
     for i in range(n_colors):
         colors.append(
