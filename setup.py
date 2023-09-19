@@ -130,16 +130,16 @@ def parse_requirements(fname="requirements.txt", with_version=False):
 VERSION = parse_version("distinctipy/__init__.py")
 
 setuptools.setup(
-    name="distinctipy",
+    name="distinctipy27",
     version=VERSION,
-    author="Jack Roberts",
-    author_email="jroberts@turing.ac.uk",
+    author="Jolon Behrent",
+    author_email="jolon.behrent@protonmail.com",
     description="A lightweight package for generating visually distinct colours.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/alan-turing-institute/distinctipy",
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 2.7",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Topic :: Multimedia :: Graphics",

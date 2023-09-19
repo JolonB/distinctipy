@@ -8,6 +8,10 @@
 
 _distinctipy_ is a lightweight python package providing functions to generate
 colours that are visually distinct from one another.
+You can find _distinctipy_ [here](https://github.com/alan-turing-institute/distinctipy).
+
+Unfortunately, _distinctipy_ doesn't work in Python2.7.
+This repository aims to fix that.
 
 Commonly available qualitative colormaps provided by the likes of matplotlib
 generally have no more than 20 colours, but for some applications it is useful
@@ -18,17 +22,17 @@ the list as possible.
 
 ## Installation
 
-_distinctipy_ is designed for Python 3 and can be installed with pip by running:
+_distinctipy27_ is designed for Python 2.7 and can be installed with pip by running:
 
 ```shell
-python -m pip install distinctipy
+python -m pip install distinctipy27
 ```
 
 Alternatively clone the repo and install it locally:
 
 ```shell
-git clone https://github.com/alan-turing-institute/distinctipy.git
-cd distinctipy
+git clone https://github.com/JolonB/distinctipy27.git
+cd distinctipy27
 python -m pip install .
 ```
 
@@ -99,3 +103,4 @@ stack overflow answers. In particular:
 ## Citing distinctipy
 
 If you would like to cite distinctipy, please refer to the upload of the package on Zenodo: https://doi.org/10.5281/zenodo.3985191
+I don't recommend citing this repository as I did barely any work for this port to Python2.7.

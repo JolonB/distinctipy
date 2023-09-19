@@ -12,7 +12,7 @@ def require_modules(modnames):
     for modname in modnames:
         try:
             importlib.import_module(modname)
-        except (ImportError, ModuleNotFoundError):
+        except ImportError:
             pytest.skip("test requires {}".format(modname))
 
 
