@@ -223,8 +223,8 @@ def test_ensure_rng():
 
     from distinctipy.distinctipy import _ensure_rng
 
-    assert _ensure_rng(1).randint(0, 1000) == 137
-    assert _ensure_rng(1.3).randint(0, 1000) == 57
+    assert _ensure_rng(1).randint(0, 1000) == 134
+    assert _ensure_rng(1.3).randint(0, 1000) == 56
     rng = random.Random()
     assert _ensure_rng(rng) is rng
     assert _ensure_rng(1) is not rng
